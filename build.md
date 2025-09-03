@@ -4,7 +4,6 @@ Music-Extended (arm64-v8a): 8.30.54
 Music-Extended (arm-v7a): 8.30.54  
 Reddit: 2024.17.0  
 Spotify: 9.0.76.1115  
-Twitch: 16.9.1  
 YouTube: 20.13.41  
 YouTube-Extended: 19.47.53  
 
