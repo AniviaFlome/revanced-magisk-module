@@ -1,3 +1,5 @@
+Music: 8.25.54  
+Music-Extended: 8.30.54  
 Reddit: 2024.17.0  
 Spotify: 9.0.76.1115  
 YouTube: 20.13.41  
