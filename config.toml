@@ -27,8 +27,6 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 
 [Music]
 enabled = true
-build-mode = "both"
-arch = "both"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
@@ -40,8 +38,6 @@ app-name = "Music"
 patches-source = "inotia00/revanced-patches"
 cli-source = "inotia00/revanced-cli"
 rv-brand = "ReVanced Extended"
-build-mode = "both"
-arch = "both"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 
 [Reddit]
@@ -77,5 +73,4 @@ uptodown-dlurl = "https://twitch.en.uptodown.com/android"
 
 [TikTok]
 enabled = false
-# archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.zhiliaoapp.musically"
 included-patches = "'SIM spoof'"
