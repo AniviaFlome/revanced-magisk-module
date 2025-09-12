@@ -57,6 +57,11 @@ integrations-source = " inotia00/revanced-integrations"
 rv-brand = "ReVanced Extended"
 apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit/"
 
+[Instagram]
+apkmirror-dlurl = "https://apkmirror.com/apk/instagram/instagram-instagram/"
+included-patches = "'Hide ads' 'Disable signature check'"
+exclusive-patches = true
+
 [Spotify]
 enabled = true
 build-mode = "apk"
