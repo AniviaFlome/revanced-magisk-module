@@ -16,8 +16,6 @@ jobs:
         with:
           GH_PAT: ${{ secrets.GH_PAT }}
           CONFIG_PATH: .github/workflows/sync.yml
-          CONFIG_INLINE: |
-            AniviaFlome/revanced-magisk-module@main:
               - source: ./
                 dest: ./
                 exclude: |
