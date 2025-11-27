@@ -1,0 +1,11 @@
+group:
+  - repository: AniviaFlome/revanced-magisk-module@main
+    files:
+      - source: ./
+        dest: ./
+        exclude: |
+          config.toml
+          .git/
+          .github/workflows/sync.yml
+          .github/workflows/sync-config.yml
+          README.md

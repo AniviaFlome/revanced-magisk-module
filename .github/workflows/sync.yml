@@ -1,7 +1,8 @@
 name: Sync Files
+
 on:
   schedule:
-      - cron: '0 0 1 * *'
+    - cron: '0 0 1 * *'
   workflow_dispatch:
 
 jobs:
@@ -15,10 +16,3 @@ jobs:
         uses: BetaHuhn/repo-file-sync-action@v1
         with:
           GH_PAT: ${{ secrets.GH_PAT }}
-          CONFIG_PATH: .github/workflows/sync.yml
-              - source: ./
-                dest: ./
-                exclude: |
-                  config.toml
-                  .github/workflows/sync.yml
-                  .git/
