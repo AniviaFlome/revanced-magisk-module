@@ -3,9 +3,9 @@ group:
     files:
       - source: ./
         dest: ./
-        exclude: |
-          config.toml
-          .git/
-          .github/workflows/sync.yml
-          .github/workflows/sync-config.yml
-          README.md
+        exclude:
+          - config.toml
+          - .git/
+          - .github/workflows/sync.yml
+          - .github/workflows/sync-config.yml
+          - README.md
