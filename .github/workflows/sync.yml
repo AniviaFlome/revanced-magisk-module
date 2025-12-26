@@ -19,19 +19,32 @@ jobs:
       contents: write
 
     steps:
+      - name: Get upstream repository
+        id: upstream
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          PARENT=$(gh api repos/${{ github.repository }} --jq '.parent.full_name // empty')
+          if [ -z "$PARENT" ]; then
+            echo "This repository is not a fork"
+            exit 1
+          fi
+          echo "repo=$PARENT" >> $GITHUB_OUTPUT
+
       - name: Checkout Fork
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
+      - name: Fetch Upstream
+        run: |
+          git remote add upstream https://github.com/${{ steps.upstream.outputs.repo }}.git
+          git fetch upstream
+
       - name: Sync with Upstream
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          # Add upstream remote
-          git remote add upstream https://github.com/j-hc/revanced-magisk-module.git
-          git fetch upstream
 
           # Merge upstream changes, keeping our protected files
           git merge upstream/main --no-edit --allow-unrelated-histories || {
